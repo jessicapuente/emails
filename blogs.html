@@ -1,0 +1,122 @@
+<style type="text/css">
+    @media only screen and (max-device-width: 480px) { 
+    /* mobile-specific CSS styles go here */
+        table[class=contenttable] { 
+            width: 320px !important;
+        }
+    }
+
+    /* regular CSS styles go here */
+    table.contenttable {
+        width: 640px;
+    }
+    article {
+font-family: Helvetica; 
+font-size: 14px; 
+font-weight: lighter
+    }
+</style>
+<table border="0" class="contenttable" width="640">
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                        <img alt="Turn your images on por favor." style="font-family: georgia; font-size: 30px; color: red;font-style: italic;" width="400px" src="http://media.sailthru.com/x8/1jy/1/k/52ddb9ca65413.gif">
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="300px;">
+                        <br><p style="font-family: helvetica; font-size: 13px;padding-top: 10px;padding-bottom: 10px;font-weight: bold;">AT A GLANCE</p>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[0].url}" style="text-decoration: none; color: #BF3030;">{content[0].title}</a></p>
+                        <hr>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[1].url}" style="text-decoration: none; color: #BF3030;">{content[1].title}</a></p>
+                        <hr>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[2].url}" style="text-decoration: none; color: #BF3030;">{content[2].title}</a></p>
+                        <hr>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[3].url}" style="text-decoration: none; color: #BF3030;">{content[3].title}</a></p>
+                        <hr>
+                    </td>
+                    <td>
+                        <span style="padding-left: 30px;">{include "news_blogs-x34"}</span>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr class="2">
+        <td>
+            <br><p style="font-family: helvetica; font-size: 13px;padding-top: 10px;padding-bottom: 10px;font-weight: bold;">FEATURED BLOG</p>
+            <hr style="height: 1px; width: 400px;color: #E0E0E0;background-color: #E0E0E0;border: 0;" align="left">
+            <p style="font-family: helvetica; font-weight: lighter;font-size: 18px;color: #BF3030;"><a href="{content[4].url}" style="text-decoration: none; color: #BF3030;">{content[4].title}</a></p>
+            <a href="{content[4].url}"><img style="width: 70%;" src="{content[4].image}"/></a>
+            <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;">{substr(content[4].description, 0, 300)}...</p>
+            <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[4].url}" style="text-decoration: none; color: #BF3030;">Read More</a></p>
+            <hr style="height: 4px; width: 500px;color: #E0E0E0;background-color: #E0E0E0;border: 0;" align="left">
+            <span style="margin-right: auto; margin-left: auto;">{include "news_blogs-x37"}</span>
+        </td>
+    </tr>
+    <tr class="3">
+        <td>
+            <table border="0" cellspacing="10">
+                <tr>
+                    <td style="vertical-align: top;" valign="top">
+                        <p style="font-family: helvetica; font-size: 13px;padding-top: 10px;padding-bottom: 10px;font-weight: bold;">MORE BLOGS</p>
+                        <a href="{content[5].url}"><img style="width: 250px;" src="{content[5].image}"/></a>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[5].url}" style="text-decoration: none; color: #BF3030;">{content[5].title}</a></p>
+                        <article><p>{substr(content[5].description, 0, 200)}...</p></article>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[5].url}" style="text-decoration: none; color: #BF3030;">Read More</a></p><br>
+                    </td>
+                    <td style="vertical-align: top;" valign="top">
+                        <p style="font-family: helvetica; font-size: 13px;padding-top: 10px;padding-bottom: 10px;font-weight: bold;color: white;">&nbsp;</p>
+                        <a href="{content[6].url}"><img style="width: 250px;" src="{content[6].image}"/></a>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[6].url}" style="text-decoration: none; color: #BF3030;">{content[6].title}</a></p>
+                        <article><p>{substr(content[6].description, 0, 200)}...</p></article>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[6].url}" style="text-decoration: none; color: #BF3030;">Read More</a></p><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align: top;" valign="top">
+                        <a href="{content[7].url}"><img style="width: 250px;" src="{content[7].image}"/></a>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[7].url}" style="text-decoration: none; color: #BF3030;">{content[7].title}</a></p>
+                        <article><p>{substr(content[7].description, 0, 200)}...</p></article>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[7].url}" style="text-decoration: none; color: #BF3030;">Read More</a></p><br>
+                    </td>
+                    <td style="vertical-align: top;" valign="top">
+                        <a href="{content[8].url}"><img style="width: 250px;" src="{content[8].image}"/></a>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[8].url}" style="text-decoration: none; color: #BF3030;">{content[8].title}</a></p>
+                        <article><p>{substr(content[8].description, 0, 200)}...</p></article>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;color: #BF3030;"><a href="{content[8].url}" style="text-decoration: none; color: #BF3030;">Read More</a></p><br>
+                    </td>
+                </tr>
+            </table>
+            <hr style="height: 4px; width: 500px;color: #E0E0E0;background-color: #E0E0E0;border: 0;" align="left">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td>
+                       <span style="width: 320px;padding-right: 200px;"> {include "news_blogs-x33"}</span> 
+                    </td>
+                    <td>
+                        <p style="font-family: helvetica; font-weight: bold;font-size: 12px;">THE PRESS-ENTERPRISE</p>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;">1825 Chicago Ave</p>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;">Riverside, CA, 92501</p>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;">news@pe.com</p>
+                        <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;">1-800-794-6397</p>
+                        <p>{beacon}</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p style="font-family: helvetica; font-weight: lighter;font-size: 14px;">You are receiving this email because you are subscribed to PE Business news. To unsubscribe, <a style="font-family: helvetica; font-weight: lighter;font-size: 14px;" href="{optout_confirm_url}">click here</a>.</p> 
+        </td>
+    </tr>
+</table>
