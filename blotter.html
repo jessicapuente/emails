@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+</head>
+<body>
+<style type="text/css">
+    @media only screen and (max-device-width: 480px) { 
+    /* mobile-specific CSS styles go here */
+        table[class=contenttable] { 
+            width: 320px !important;
+        }
+    }
+
+    /* regular CSS styles go here */
+    table.contenttable {
+        width: 640px;
+    }
+</style>
+<!-- HEADER -->
+<table class="contenttable" border="0" width="640px">
+    <tbody>
+    	<tr>
+			<td>
+<table border="0" width="600">
+	<tbody>
+		<tr>
+			<td height="70">
+            {include "crime_blotter-x37"}
+				<p style="text-align: center;font-weight: bold; font-family: Didot; font-size: 50px;">CRIME BLOTTER</p>
+                <p style="font-family: Didot;font-style: italic; font-size: 16px;text-align: center;">Reported by The Press-Enterprise</p>
+             <hr>
+             <p style="text-align: center;font-family: Didot;font-size: 12px;">{date('MMM dd, yyyy')}</p>
+             <hr>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- /HEADER --> <!-- BODY -->
+<table border="0">
+	<tbody>
+		<tr>
+			<td style="text-align: left; vertical-align: top;color: #000001">
+				<a href="{zebra[0].url}" style="font-family: helvetica; font-weight: lighter; font-size: 24px; text-decoration: none; color: #000001;">{zebra[0].title}</a>
+				<p><a href="{{social_share('fbshare', zebra[0].url)}}"><img src="http://members.pe.com/Portals/156288/images/facebookicon.png" width="23" height="23"></a><a href="{{social_share('twitter', zebra[0].url)}}"><img src="http://members.pe.com/Portals/156288/images/twitterbird.png?1354235559.52437" width="23" height="23"></a><a href="{{social_share('pinterest', zebra[0].url, zebra[0].description, zebra[0].image)}}"><img src="http://media.sailthru.com/x8/1jx/3/1/51315584da518.gif" width="23px" border="0" height="23px" alt="plogo"/></a>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: justify;">
+				<div style="display: inline-block;"><a href="{zebra[0].url}"><img src="{zebra[0].image}" valign="center" style="padding-top: 10px; display: block; text-align: left;" width="150"/></a></div><span style="padding-left: 300px;display: inline-block;">{include "crime_blotter-x33"}</span>
+				<p style="font-size: 96%; color: #000001; font-family: Helvetica Neue; text-align:justify;"><a style="color: #000001;text-decoration: none;" href="{zebra[0].url}">{zebra[0].description}</a></p><br><br>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+{foreach slice(zebra, 1,5) as c}
+<table border="0" cellspacing="5">
+	<tbody>
+		<tr>
+			<td>
+            <a href="{c.url}"><img src="{c.image}" style="vertical-align: top;"width="150"></a>
+            </td>
+            <td style="color: #000001;">
+				<a style="font-family: helvetica; font-weight: lighter; font-size: 20px; text-decoration: none; color: #000001;" href="{c.url}">{c.title}</a>
+				<p><a href="{{social_share('fbshare', c.url)}}"><img style="vertical-align: middle;" src="http://members.pe.com/Portals/156288/images/facebookicon.png" width="25" height="25"></a><a href="{{social_share('twitter', c.url)}}"><img style="vertical-align: middle;" src="http://members.pe.com/Portals/156288/images/twitterbird.png?1354235559.52437" width="23" height="23"></a><a href="{{social_share('pinterest', c.url, c.description, c.image)}}"><img src="http://media.sailthru.com/x8/1jx/3/1/51315584da518.gif" width="23px" border="0" height="23px" style="vertical-align: middle;"/></a> <a href="{c.url}" style="font-family: helvetica; font-weight: lighter; font-size: 14px;text-decoration: none;">Read more</a>
+			</td>
+		</tr>
+        <tr height="30px;">
+            <td>
+                
+            </td>
+        </tr>
+	</tbody>
+</table>
+{/foreach}
+<table border="0">
+	<tbody>
+		<tr>
+			<td>
+{include "crime_blotter-x34"}
+<p><span style="font-size: small; font-family: helvetica; color: #000001;"><small>If you believe this has been sent to you in error, please safely <a href="{optout_confirm_url}" style="color: grey;">unsubscribe</a>.</small></span></p>
+{beacon}
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
