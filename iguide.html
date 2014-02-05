@@ -1,0 +1,103 @@
+<style type="text/css">
+    @media only screen and (max-device-width: 480px) { 
+    /* mobile-specific CSS styles go here */
+        table[class=ece_iguide.contenttable] { 
+            width: 320px !important;
+        }
+    }
+
+    /* regular CSS styles go here */
+    table.ece_iguide.contenttable {
+        width: 640px;
+    }
+</style>
+<table width="640" cellpadding="0" cellspacing="0" class="ece_iguide.contenttable">
+    <tr>
+        <td>
+            <table height="100px" width="100%" style="text-align: center;">
+                <tr>
+                    <td>
+                        <p style="font-family: Didot; font-size: 50px;"><img width="60px" style="vertical-align: top;"src="https://pbs.twimg.com/profile_images/1650842797/iguidebutton_text.jpg">iGuide</p>
+                        <p style="font-family: Didot; font-size: 14px;">Your guide to local entertainment.</p>
+                        <hr>
+                        <p style="font-family: Didot; font-size: 14px;">Share the love <a href="{{public_share('fbshare')}}"><img src="http://media.sailthru.com/x8/1jx/4/4/515df8f15f481.png" style="vertical-align: middle;padding: 2px;" width="25" border="0" height="25" alt="facebook"/></a><a href="https://plus.google.com/share?url=http://blog.pe.com/iguide/"><img style="padding: 2px;vertical-align: middle;" width="25" src="https://www.gstatic.com/images/icons/gplus-32.png"></a><a href="{{public_share('twitter', 'iGuide entertainment newsletter for the Inland Empire @pecom_iguide')}}"><img style="padding: 2px;vertical-align: middle;" src="http://media.sailthru.com/x8/1jx/4/4/515df9319bcdb.png" width="25"  border="0" height="25" alt="twitter"/></a></p>
+                        <hr>
+                    </td>
+                </tr>
+            </table>
+            <table cellspacing="5">
+                <tr>
+                    <td>
+                        <a href="{ece_iguide.content[0].url}"><img width="300" src="{ece_iguide.content[0].image}"></a>
+                        <a href="{ece_iguide.content[0].url}" style="font-family: helvetica; font-weight: lighter; font-size: 22px;color: black;text-decoration: none;">{ece_iguide.content[0].title}</a>
+                        <a style="font-family: helvetica; font-weight: lighter; font-size: 14px;color: black; text-decoration: none;" href="{ece_iguide.content[0].url}"><p>{substr(ece_iguide.content[0].description, 0, 100)}...</p></a>
+                        <a style="font-family: helvetica; font-weight: lighter; font-size: 11px;color: black; text-decoration: none;" href="{ece_iguide.content[1].url}"><p>Read More</p></a>
+                    </td>
+                    <td>
+                        <span style="padding-left: 30px;">{include "local_entertainment-x34"}</span>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top;" valign="top">
+                    <td>
+                        <a href="{ece_iguide.content[1].url}"><img width="300" src="{ece_iguide.content[1].image}"></a>
+                        <a href="{ece_iguide.content[1].url}" style="font-family: helvetica; font-weight: lighter; font-size: 22px;color: black;text-decoration: none;">{ece_iguide.content[1].title}</a>
+                        <a style="font-family: helvetica; font-weight: lighter; font-size: 14px;color: black; text-decoration: none;" href="{ece_iguide.content[1].url}"><p>{substr(ece_iguide.content[1].description, 0, 100)}...</p></a>
+                        <a style="font-family: helvetica; font-weight: lighter; font-size: 11px;color: black; text-decoration: none;" href="{ece_iguide.content[1].url}"><p>Read More</p></a>
+                    </td>
+                    <td>
+                        <a href="{movies.content[2].url}"><img width="300" src="{movies.content[2].image}"></a>
+                        <a href="{movies.content[2].url}" style="font-family: helvetica; font-weight: lighter; font-size: 22px;color: black;text-decoration: none;">{movies.content[2].title}</a>
+                        <a style="font-family: helvetica; font-weight: lighter; font-size: 14px;color: black; text-decoration: none;" href="{movies.content[2].url}"><p>{substr(movies.content[2].description, 0, 100)}...</p></a>
+                        <a style="font-family: helvetica; font-weight: lighter; font-size: 11px;color: black; text-decoration: none;" href="{movies.content[2].url}"><p>Read More</p></a>
+                    </td>
+                </tr>
+            </table>
+            <table style="margin-top: 20px;margin-bottom: 20px;">
+                <tr>
+                    <td width="465px">
+                    <hr>
+                    <hr>
+                        <p style="font-family: helvetica; font-weight: lighter; font-size: 24px;">Featured For You</p>
+                        <a href="{horizon.content[0].url}" style="font-family: helvetica; font-weight: lighter; font-size: 13px;text-decoration: none;"><p>{horizon.content[0].title}</p></a>
+                        <a href="{horizon.content[1].url}" style="font-family: helvetica; font-weight: lighter; font-size: 13px;text-decoration: none;"><p>{horizon.content[1].title}</p></a>
+                        <a href="{horizon.movies.content[2].url}" style="font-family: helvetica; font-weight: lighter; font-size: 13px;text-decoration: none;"><p>{horizon.movies.content[2].title}</p></a>
+                    <hr>
+                    <hr>
+                    </td>
+                    <td>
+                        {include "local_entertainment-x33"}
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td style="vertical-align: top;" valign="top">
+                        <a href="{dining.content[0].url}"><img width="300" src="{dining.content[0].image}"></a>
+                        <a href="{dining.content[0].url}" style="font-family: helvetica; font-weight: lighter; font-size: 22px;color: black;text-decoration: none;">{dining.content[0].title}</a>
+                        <a style="font-family: helvetica; font-weight: lighter; font-size: 14px;color: black; text-decoration: none;" href="{dining.content[0].url}"><p>{substr(dining.content[0].description, 0, 100)}...</p></a>
+                        <a style="font-family: helvetica; font-weight: lighter; font-size: 11px;color: black; text-decoration: none;" href="{dining.content[0].url}"><p>Read More</p></a>
+                    </td>
+                    <td>
+                        <a href="{ece_iguide.content[4].url}"><img width="300" src="{ece_iguide.content[4].image}"></a>
+                        <a href="{ece_iguide.content[4].url}" style="font-family: helvetica; font-weight: lighter; font-size: 22px;color: black;text-decoration: none;">{ece_iguide.content[4].title}</a>
+                        <a style="font-family: helvetica; font-weight: lighter; font-size: 14px;color: black; text-decoration: none;" href="{ece_iguide.content[4].url}"><p>{substr(ece_iguide.content[4].description, 0, 100)}...</p></a>
+                        <a style="font-family: helvetica; font-weight: lighter; font-size: 11px;color: black; text-decoration: none;" href="{ece_iguide.content[4].url}"><p>Read More</p></a>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        {include "local_entertainment-x37"}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="http://media.sailthru.com/x8/1jy/1/k/52ddb9ca65413.gif" width="100%">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<p><small>If you believe this has been sent to you in error, please safely <a href="{optout_confirm_url}">unsubscribe</a>.{beacon}</small></p>
