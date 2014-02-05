@@ -1,0 +1,40 @@
+<style type="text/css">
+    @media only screen and (max-device-width: 480px) { 
+    /* mobile-specific CSS styles go here */
+        table[class=contenttable] { 
+            width: 320px !important;
+        }
+    }
+
+    /* regular CSS styles go here */
+    table.contenttable {
+        width: 640px;
+    }
+</style>
+<table class="contenttable">
+    <tr>
+        <td align="center">
+            <p style="text-align: center;font-family: Didot;font-style: italic; font-size: 60px;"><img src="http://media.sailthru.com/x8/1jx/a/i/526188d9d3c15.png" width="80" alt="turn on your images, por favor"/>Emeals</p>
+            <hr>
+            <p style="text-align: center;font-family: Didot;font-size: 12px;">Share the love 
+            <a href="{{social_share('fbshare', content[0].url)}}"><img src="http://media.sailthru.com/x8/1jx/4/4/515df8f15f481.png" width="23" height="23" style="vertical-align: middle;padding: 2px;"></a>
+            <a href="{{social_share('twitter', content[0].url)}}"><img src="http://media.sailthru.com/x8/1jx/4/4/515df9319bcdb.png" width="23" height="23" style="vertical-align: middle;padding: 2px;"></a>
+            <a href="{{social_share('pinterest', content[0].url, content[0].description, content[0].image)}}"><img src="http://media.sailthru.com/x8/1jx/4/4/515df9292d35d.png" width="23px" border="0" height="23px" style="vertical-align: middle;padding: 2px;"/></p>
+            <hr>
+            <br>
+            
+            <a style="color: #000000;text-decoration: none;font-family: Didot; font-size: 20px;font-style: bold;" href="{content[0].url}"><p>{content[0].title}</p></a>
+            <a href="{content[0].url}"><img style="width: 100%" src="{content[0].image}"></a>
+            <p style="font-family: Didot; font-size: 16px;">{substr(content[0].description, 0, 500)}</p>
+                        <a style="color: #404040;text-decoration: none;font-family: Didot; font-size: 16px;font-style: italic;" href="{content[0].url}"><p>show me the full recipe</p></a>
+            <br>
+            <span style="margin-left: auto; margin-right: auto;">{{ad("Banner")}}</span>
+            <br>
+            <hr>
+            <a href="http://www.pe.com"><img src="http://cdn2.hubspot.net/hub/156288/file-463176575-gif/Inland-SoCal-Reg_PE-Dual-logo-Horiz-4c.gif" border="0" height="50" alt="the press enterprise logo"/></a>
+            <hr>
+            <p><small>If you believe this has been sent to you in error, please safely <a href="{optout_confirm_url}">unsubscribe</a>.{beacon}</small></p>
+            {{ad("300X300")}} <span style="padding-left: 150px;">{{ad("150X150")}}</span>
+        </td>
+    </tr>
+</table>
